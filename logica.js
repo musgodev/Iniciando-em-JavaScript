@@ -1,19 +1,16 @@
-var listaDeNomes = [ "Karen", "Jenifer", "Lucas" ]
-var listaDeNotas = [ [3.5,6.0], [6.5,7.5], [9.5,9.0] ]
+var listaDeNomes = ["Vinicius", "Deborah", "Gabriel", "Brida"]
+var listaDeNotas = [ [2.5,2.0], [4.5,7.5], [8.5,7.0], [10,10] ]
 
-alunoSelecionado = 0
+for(num=0; num < listaDeNomes.length; num++) {
 
-nomeDoAluno = listaDeNomes [alunoSelecionado]
+  alunoSelecionado = num
+
+nomeDoAluno = listaDeNomes[alunoSelecionado]
 notaDoAluno = listaDeNotas [alunoSelecionado]
 
 nota1 = notaDoAluno[0]
 nota2 = notaDoAluno[1]
 media = (nota1 + nota2) / 2
-
-console.log(nomeDoAluno,":")
-console.log("Nota da primeira prova :", nota1)
-console.log("Nota da segunda prova :", nota2)
-console.log("Sua média final é :", media)
 
 conceito = ""
 
@@ -29,6 +26,11 @@ else if (media <=8.0)
 else
     { conceito = "Excelente" }
 
+  
+console.log(nomeDoAluno,":")
+console.log("Nota da primeira prova :", nota1)
+console.log("Nota da segunda prova :", nota2)
+console.log("Sua média final é :", media)
 
 switch (conceito) {
   case "Ruim": 
@@ -46,5 +48,8 @@ switch (conceito) {
   case "Excelente": 
     console.log("Mandou bem.")
   break;
+}  
+
+console.log("")
 
 }
